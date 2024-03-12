@@ -5,9 +5,14 @@
 }
 
 header{
-    background-color: rgb(113, 208, 249);
+    background-color: rgba(37,94,233,255);
     padding: 10px;
 }
+
+body{
+    font-family: sans-serif;
+}
+
 
 .header-box{
     width: 1200px;
@@ -16,7 +21,7 @@ header{
 }
 
 .logo, .link, .login{
-    background-color: rgb(252, 252, 123);
+    color: white;
     border: 1px dashed black;
     padding: 5px;
     line-height: middle;
@@ -29,17 +34,19 @@ header{
 .link{
     flex-grow: 3;
     text-align: center; 
+    padding: 10px;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color:white;
     padding: 5px 20px;
 }
 
 .login{
     flex-grow: 1;
     text-align: end;
+    padding: 10px;
 }
 
 .sezione-1{
@@ -48,12 +55,19 @@ a{
     background-size: 100%;
     padding: 20px;
 }
+h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
 
 .sezione-1 > .box{
     width: 600px;
     height: 200px;
-    background-color: rgb(249, 88, 201);
     margin: auto;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 150px;
     border: 1px dashed black;
 }
 
