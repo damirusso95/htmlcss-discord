@@ -1,40 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
+/* COMMON STYLE */
+* {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-header{
-    background-color: rgba(37,94,233,255);
-    padding: 10px;
-}
-
-body{
+body {
     font-family: sans-serif;
 }
 
-
-.header-box{
-    width: 1200px;
-    margin: auto;
+.columns {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo, .link, .login{
-    color: white;
-    border: 1px dashed black;
-    padding: 5px;
-    line-height: middle;
+.boxed {
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.logo{
-    flex-grow: 1;
+
+
+/* HEADER */
+header {
+ background-color: rgba(37,94,233,255);
 }
 
-.link{
-    flex-grow: 3;
-    text-align: center; 
-    padding: 10px;
+header>nav {
+    padding: 1rem 0;
+}
+
+.nav-column {
+
+    padding: 1rem;
+}
+
+.nav-column-small {
+    width: 20%;
+}
+
+.nav-column-big {
+    width: 60%;
 }
 
 a{
@@ -43,135 +51,108 @@ a{
     padding: 5px 20px;
 }
 
-.login{
-    flex-grow: 1;
-    text-align: end;
-    padding: 10px;
-}
-
-.sezione-1{
-    min-height: 30rem;
+#jumbo {
     background-image: url(./img/jumbo.png);
     background-size: 100%;
-    padding: 20px;
+    color: white;
+    padding: 2rem;
+    min-height: 450px;
 }
+
+.jumbo-content {
+    width: 50%;
+    padding: 1rem;
+    margin: 10rem auto;
+    text-align: center;
+}
+
 h1{
     font-size: 35px;
     padding-bottom: 20px;
 }
 
-.sezione-1 > .box{
-    width: 600px;
-    height: 200px;
-    margin: auto;
-    text-align: center;
+.button-white{
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight:300;
+    line-height: 24px;
+    transition: all .2s;
+    margin-top: 1rem;
+}
+
+.button-black{
+    background-color:black;
     color: white;
-    padding: 20px;
-    margin-top: 150px;
-    border: 1px dashed black;
+    border: none;
+    border-radius: 40px;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight:300;
+    line-height: 24px;
+    transition: all .2s;
+    margin-top: 1rem;
 }
 
-.subsection2{
-    padding: 20px;
+/* MAIN */
+section.dark {
+    background-color: lightgray;
 }
 
-.subsection2 > .box{
-    width: 700px;
-    height: 200px;
-    margin: auto;
+span{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+
+section.light {
+    background-color: white;
+}
+
+main>section .columns {
+    padding: 1rem 0;
+}
+
+main>section .columns>div {
+    padding: 1rem;
+}
+
+.column-one {
+    width: 100%;
     display: flex;
+    flex-direction: column;
 }
 
-.box-sx{
-    flex-grow: 2;
-    background-color: rgb(46, 234, 234);
-    border: 1px dashed black;
+.column-big {
+    width: 60%;
+    padding: 30px;
 }
 
-.box-dx{
-    flex-grow: 1;
-    background-color: pink;
-    border: 1px dashed black;
+.column-small {
+    width: 40%;
+    min-height: 300px;
 }
 
-.underline{
-    background-color:rgb(176, 175, 175); 
-    padding: 20px;
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
 }
 
-.underline > .box{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 700px;
-    height: 200px;
-    margin: auto;
-}
-
-.sezione-3{
-    background-color:rgb(176, 175, 175);
-    padding: 20px;
-}
-
-.sezione-3 > .box{
-    width: 700px;
-    height: 400px;
-    background-color: green;
-    margin: auto;
-    border: 1px dashed black;
-}
-
-.sezione-4{
-    background-color: black;
-    padding: 20px;
-}
-
-.sezione-4 > .box{
-    width: 700px;
-    height: 300px;
-    background-color: pink;
-    margin: auto;
-    border: 1px dashed black;
-    display: flex;
-}
-
-.sezione-4 > .box > .box-sx{
-    border: 1px dashed black;
-    flex-grow: 1;
-    background-color: rgb(235, 142, 158);
-}
-
-.sezione-4 > .box > .box-dx{
-    flex-grow: 2;
-    background-color: rgb(5, 169, 156);
-    display: flex;
-}
-
-.underbox{
-    border: 1px dashed white;
-    flex-grow: 1;
-}
-
-footer{
-    background-color: black;
-    padding: 20px;
-    border-top: 1px solid white;
-}
-
-.footer-box{
-    width: 700px;
-    margin: auto;
-    display: flex;
-    background-color: aquamarine;
-    justify-content: space-between;
-}
-
-.logo-footer{
-    margin: 15px 0;
-    border: 1px dashed black;
-    color: black;
-    background-color:rgb(235, 142, 158) ;
-}
-
-.button-footer{
-    margin: 15px 0;
+.button-blu{
+    background-color:rgb(45, 45, 206);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight:300;
+    line-height: 24px;
+    transition: all .2s;
+    margin-top: 1rem;
 }

@@ -1,85 +1,97 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>struttura discord</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Discord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
 
+<body class="debug">
 
+    <!-- Header con navbar e jumbotron -->
     <header>
-        <!-- Barra di navigazione -->
-        <div class="header-box">
-            <div class="logo"><img src="./img/logo.svg" alt="logo"></div>
-            <div class="link">
-                <a href="#">Scarica</a>
-                <a href="#">Perchè Discord</a>
-                <a href="#">Nitro</a>
-                <a href="#">Sicurezza</a>
-                <a href="#">Assistenza</a>
+        <!-- Navbar 3 colonne  -->
+        <nav class="boxed columns">
+            <!-- 3 colonne -->
+            <div class="nav-column nav-column-small">
+                <img src="./img/logo.svg" alt="logo">
             </div>
-            <div class="login">Accedi</div>
+            <div class="nav-column nav-column-big">
+                <a href="#">scarica</a>
+                <a href="#">perchè discord</a>
+                <a href="#">nitro</a>
+                <a href="#">sicurezza</a>
+                <a href="#">assistenza</a>
+
+
+            </div>
+            <div class="nav-column nav-column-small">
+                <button class="button-white">Accedi</button>
+            </div>
+        </nav>
+        <!-- Jumbotron blu  -->
+        <div id="jumbo">
+            <div class="jumbo-content">
+                <h1>Il tuo posto per parlare</h1>
+                <p>che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso.</p>
+                <button class="button-white"><i class="fa-solid fa-arrow-down"></i> scarica per mac</button>
+                <button class="button-black">apri discord nel tuo browser</button>
+
+            </div>
+                
+            </div>
         </div>
     </header>
 
+    <!-- Main contents -->
     <main>
-        <!-- sezione 1 -->
-        <section class="sezione-1">
-            <div class="box">
-                <h1>Il tuo posto per parlare</h1>
-                <p>che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiaccherare ogni giorno e ritrovarsi più spesso.</p>
+        <!-- sezione bianca 2 colonne -->
+        <section class="light">
+            <div class="boxed columns">
+                <div class="column-big">
+                    <img src="./img/item1.svg" alt="">
+                </div>
+                <div class="column-small"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>Magnam, ullam? Aut amet dolores voluptate omnis temporibus impedit cum cupiditate vitae velit, officiis minima, sunt dicta? Commodi eius odio saepe. Libero.</div>
             </div>
         </section>
-        <!-- sezione 2  -->
-        <section class="sezione-2">
-            <section class="subsection2">
-                <section class="box">
-                    <div class="boxsx"></div>
-                    <div class="boxdx"></div>
-                </section>
-            </section>
-
-            <section class="underline">
-                <div class="box">
-                    <div class="box-sx"></div>
-                    <div class="box-dx"></div>
+        <!-- sezione grigia 2 colonne -->
+        <section class="dark">
+            <div class="boxed columns">
+                <div class="column-small"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>Magnam, ullam? Aut amet dolores voluptate omnis temporibus impedit cum cupiditate vitae velit, officiis minima, sunt dicta? Commodi eius odio saepe. Libero.</div>
+                <div class="column-big">
+                    <img src="./img/item2.svg" alt="">
                 </div>
-            </section>
-
-            <section class="subsection2">
-                <section class="box">
-                    <div class="boxsx"></div>
-                    <div class="boxdx"></div>
-                </section>
-            </section>
+            </div>
         </section>
-
-        <!-- aezione 3 -->
-        <section class="sezione-3">
-            <div class="box"></div>
+        <!-- sezione bianca 2 colonne -->
+        <section class="light">
+            <div class="boxed columns">
+                <div class="column-big"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br>Magnam, ullam? Aut amet dolores voluptate omnis temporibus impedit cum cupiditate vitae velit, officiis minima, sunt dicta? Commodi eius odio saepe. Libero.</div>
+                <div class="column-small"><img src="./img/item3.svg" alt=""></div>
+            </div>
         </section>
-        <!-- sezione 4 -->
-        <section class="sezione-4">
-            <div class="box">
-                <div class="boxsx"></div>
-                <div class="boxdx">
-                    <div class="underbox"></div>
-                    <div class="underbox"></div>
-                    <div class="underbox"></div>
-                    <div class="underbox"></div>
+        <!-- sezione grigia 1 colonna -->
+        <section class="dark">
+            <div class="boxed columns">
+                <div class="column-one">
+                    <span>Tecnologia affidabile per tenersi in contatto</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex assumenda soluta perspiciatis voluptas a saepe eaque ducimus quia. Cupiditate laudantium possimus quas autem expedita provident temporibus tenetur nesciunt, deserunt explicabo.</p>
+                    <img src="./img/item4-big.svg" alt="">
+                    <span>Pronto ad iniziare la tua nuova avventura?</span>
+                    <Button class="button-blu boxed"><i class="fa-solid fa-arrow-down"></i> scarica per mac</Button>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-box">
-            <div class="logo-footer">Logo</div>
-            <button class="button-footer">Bottone</button>
-        </div>
-    </footer>
+    <!-- Footer su due righe -->
+    <footer>footer qui</footer>
 
 </body>
+
 </html>
